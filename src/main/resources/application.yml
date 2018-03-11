@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      name: config-server
+      label: master
+      server:
+        git:
+#          uri: https://@gitlab.com/xxx.git
+          uri: https://github.com/gholly/configProperties
+          username: yourname
+          password: yourpassword
+          searchPaths: configPath
