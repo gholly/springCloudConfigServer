@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableConfigServer
-@EnableDiscoveryClient
 @RestController
 public class ConfigApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ConfigApplication.class, args);
     }
+
 
 
 
